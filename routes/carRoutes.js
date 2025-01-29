@@ -11,7 +11,7 @@ router.get('/search', searchCars); // Search route
 router.post('/create', upload.array('images', 10),verifyToken, createCar);
 
 // Get all cars
-router.get('',verifyToken, getAllCars);
+router.get('', getAllCars);
 
 // Get a car by ID
 router.get('/:id',verifyToken,getCarById);
